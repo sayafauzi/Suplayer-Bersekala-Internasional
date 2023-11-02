@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV KERJA</title>
+</head>
+<body>
+    <header>
+        <h1>Daftar Riwayat Hidup emet</h1>
+        <h2>Ahmad Fauzi</h2>
+        <nav>
+            <ul>
+                <li> <a href="#biodata">BIODATA</a> </li>
+                <li > <a href=""></a> PENDIDIKAN</li>
+                <li #skill>SKILL</li>
+                <li #experience>EXPERIENCE</li>
+                <li #kontak>KONTAK</li>
+            </ul>
+        </nav>
+        <img src="assets/Avatar Fauzi.jpg" alt="">
+    </header>
+
+    <section id="biodata">
+        <h2>Biodata Diri</h2>
+        <table>
+            <tr>
+                <td>Nama LEngkap</td>
+                <td>Ahmad Fauzi</td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td>Batu Aji</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+    </section>
+    <section id="pendidikan"></section>
+    <section id="skill"></section>
+    <section id="experience"></section>
+    <section id="kontak"></section>
+
+</body>
+</html>

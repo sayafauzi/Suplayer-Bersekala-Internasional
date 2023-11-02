@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root {
+    --primary-color: #35446d;
+    --primary-color-light: #8085b1;
+    --secondary-color: #fafcff;
+    --text-dark: #0d213f;
+    --text-light: #767268;
+    --extra-light: #ffffff;
+    --max-width: 1200px;
+    --mat-expansion-header-text-font: 'Quicksand', sans-serif;
+    /*
+        Fonts
+    */
+    --body-font: 'Quicksand', sans-serif;
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*
+        Font Weight
+    */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    /*  
+        Margin Buttom
+    */
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    /*  
+        Margin Top
+    */
+    --mt-0-5: .5rem;
+    --mt-0-75: .75rem;
+    --mt-1: 1rem;
+    --mt-1-5: 1.5rem;
+    --mt-2: 2rem;
+    --mt-2-5: 2.5rem;
+    /*
+        z-index
+    */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    /*
+        Line Height
+    */
+    --line-height-1: 1.5rem;
+    --line-height-2: 1.8rem;
+    --line-height-3: 2.1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    scroll-behavior: smooth;
+}
+
+header {
+    margin: auto;
+    padding: 0 0rem 6rem 0rem;
+    background-color: var(--primary-color-light);
+    border-radius: 0 0 1rem 1rem;
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+.header__nama {
+    padding: 2rem;
+    text-align: center;
+    font-size: var(--big-font-size);
+    color: var(--text-dark);
+}
+
+.profile {
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+.tema-besar {
+    text-align: center;
+    background-color: var(--primary-color-light);
+    padding: .5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow:  20px 20px 60px #6d7196,
+             -20px -20px 60px #9399cc;
+}
+
+.tema-besar h1 {
+    color: #fafcff;
+    margin: 2rem;
+}
+
+.posisi__header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    justify-content: revert;
+}
+
+.posisi__header nav{
+    justify-self: start;
+}
+
+.link__header a {
+    padding: 0 1rem;
+    color: var(--text-dark);
+    transition: 0.3s;
+    font-weight: 600;
+    opacity: .95;
+}
+
+.link__header a:hover {
+    opacity: 1;
+    padding-bottom: 1rem;
+    border-bottom: 10px solid var(--primary-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--text-dark);
+    font-weight: 800;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    min-height: 100vh;
+}
+
+.container h2 {
+    margin-bottom: 2rem;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    padding: .5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+}
+
+.mt-2 {margin-top: var(--mt-2);}
+
+.ml-2 {margin-left: var(--mt-2);}
+
+.tengah {
+    text-align: center;
+}
+
+.img_table{
+    width: 60%;
+}
+
+.img_table_produk {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.semi_bold{ font-weight: var(--font-semi-bold);} 
+
+.jarak_responsif{
+    justify-content: start;
+}  
+
+@media screen and (width < 900px) {
+    .posisi__header {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        justify-content: revert;
+    }
+    .posisi__header nav {
+        justify-self: center;
+    }   
+    .nav__links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (width < 600px) {
+    .posisi__header {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: revert;
+    }
+    .nav__links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #tentang, #produk, #pelayanan, #mitra, #hubungi{
+        overflow-x:auto;
+    }
+    table, td, th {
+        border: 0px none;
+    }
+}
